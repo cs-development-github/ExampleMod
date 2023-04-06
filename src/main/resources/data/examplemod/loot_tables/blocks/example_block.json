@@ -1,0 +1,15 @@
+Permet de dire que le block es dropables
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "examplemod:example_block"
+        }
+      ]
+    }
+  ]
+}
