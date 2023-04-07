@@ -9,7 +9,7 @@ public class ModItemGroup {
     public static final CreativeModeTab ChrisModTab = new CreativeModeTab(Chrismod.MOD_ID) {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.AMETHYST.get());
+            return new ItemStack(ModItems.CITRINE.get());
         }
     };
 }

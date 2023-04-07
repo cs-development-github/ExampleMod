@@ -1,5 +1,6 @@
 package net.chrisDev.chrismod;
 
+import net.chrisDev.chrismod.block.ModBlocks;
 import net.chrisDev.chrismod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,7 @@ public class Chrismod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();;
 
         ModItems.ITEMS.register(eventBus);
+        ModBlocks.BLOCKS.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

@@ -15,10 +15,14 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Chrismod.MOD_ID);
 
-    public static final RegistryObject<Item> AMETHYST = register("amethyst",
+    public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
             () -> new Item(new Item.Properties().tab(ModItemGroup.ChrisModTab)) );
 
-    private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
-        return ITEMS.register(name,item);
+    public static final RegistryObject<Item> RAW_CITRINE = ITEMS.register("raw_citrine",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.ChrisModTab)) );
+
+    public static void register(IEventBus eventBus){
+        ITEMS.register(eventBus);
     }
+
 }

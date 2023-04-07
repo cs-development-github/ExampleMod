@@ -1,4 +1,13 @@
 {
-  "item.chrismod.amethyst": "Amethyst",
-  "itemGroup.chrismod": "Amnethyst"
+  "itemGroup.chrismod": "Ciprine mod",
+
+  "item.chrismod.citrine": "Citrine",
+  "item.chrismod.raw_citrine": "Raw citrine",
+
+  "block.chrismod.citrine_block": "Citrine Block",
+  "block.chrismod.raw_citrine_block": "Raw Citrine Block",
+  "block.chrismod.citrine_ore": "Citrine Ore",
+  "block.chrismod.deepslate_citrine_ore": "Deepslate Citrine Ore",
+  "block.chrismod.endstone_citrine_ore": "Endstone Citrine Ore",
+  "block.chrismod.netherrack_citrine_ore": "Netherrack Citrine Ore"
 }
