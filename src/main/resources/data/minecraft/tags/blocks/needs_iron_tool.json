@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "chrismod:citrine_block",
+    "chrismod:raw_citrine_block",
+    "chrismod:citrine_ore",
+    "chrismod:deepslate_citrine_ore",
+    "chrismod:netherrack_citrine_ore",
+    "chrismod:endstone_citrine_ore"
+  ]
+}

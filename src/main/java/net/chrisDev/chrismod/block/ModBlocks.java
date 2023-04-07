@@ -31,7 +31,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(7f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.METAL)), ModItemGroup.ChrisModTab);
+                    .sound(SoundType.STONE)), ModItemGroup.ChrisModTab);
 
     public static final RegistryObject<Block> DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
@@ -66,7 +66,6 @@ public class ModBlocks {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(ModItemGroup.ChrisModTab)));
     }
-
 
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
