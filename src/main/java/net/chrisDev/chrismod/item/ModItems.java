@@ -16,7 +16,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Chrismod.MOD_ID);
 
     public static final RegistryObject<Item> AMETHYST = register("amethyst",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)) );
+            () -> new Item(new Item.Properties().tab(ModItemGroup.ChrisModTab)) );
 
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
         return ITEMS.register(name,item);
