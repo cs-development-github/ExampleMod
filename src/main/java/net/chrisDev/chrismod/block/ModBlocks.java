@@ -1,6 +1,7 @@
 package net.chrisDev.chrismod.block;
 
 import net.chrisDev.chrismod.Chrismod;
+import net.chrisDev.chrismod.block.custom.SpeedyBlock;
 import net.chrisDev.chrismod.item.ModItemGroup;
 import net.chrisDev.chrismod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -57,6 +58,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)), ModItemGroup.ChrisModTab);
 
+    public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
+            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)), ModItemGroup.ChrisModTab);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);
         registerBlockItem(name, toReturn, tab);
@@ -74,3 +81,5 @@ public class ModBlocks {
 
 
 }
+
+

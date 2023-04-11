@@ -3,6 +3,10 @@
 
   "item.chrismod.citrine": "Citrine",
   "item.chrismod.raw_citrine": "Raw citrine",
+  "item.chrismod.dowsing_rod": "Dowsing Rod",
+  "item.chrismod.cucumber": "Cucumber",
+  "item.chrismod.coal_coke": "Coal Coke",
+
 
   "block.chrismod.citrine_block": "Citrine Block",
   "block.chrismod.raw_citrine_block": "Raw Citrine Block",
@@ -10,5 +14,8 @@
   "block.chrismod.deepslate_citrine_ore": "Deepslate Citrine Ore",
   "block.chrismod.endstone_citrine_ore": "Endstone Citrine Ore",
   "block.chrismod.netherrack_citrine_ore": "Netherrack Citrine Ore",
+  "block.chrismod.speedy_block": "Speedy Block",
+
+  "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!"
 
 }
