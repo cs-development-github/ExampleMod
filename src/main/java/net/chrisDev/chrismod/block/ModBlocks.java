@@ -4,9 +4,10 @@ import net.chrisDev.chrismod.Chrismod;
 import net.chrisDev.chrismod.block.custom.SpeedyBlock;
 import net.chrisDev.chrismod.item.ModItemGroup;
 import net.chrisDev.chrismod.item.ModItems;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,7 +16,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -62,7 +65,22 @@ public class ModBlocks {
             () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.METAL)), ModItemGroup.ChrisModTab);
+                    .sound(SoundType.METAL)), ModItemGroup.ChrisModTab, "tooltip.chrismod.block.speedy_block");
+
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, String tooltipKey){
+        RegistryObject<T> toReturn = BLOCKS.register(name,block);
+        registerBlockItem(name, toReturn, tab, tooltipKey);
+        return  toReturn;
+    }
+    private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab, String tooltipKey){
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().tab(ModItemGroup.ChrisModTab)){
+            @Override
+            public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                pTooltip.add(new TranslatableComponent(tooltipKey));
+            }
+        });
+    }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);

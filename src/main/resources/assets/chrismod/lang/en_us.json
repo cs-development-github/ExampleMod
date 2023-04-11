@@ -16,6 +16,10 @@
   "block.chrismod.netherrack_citrine_ore": "Netherrack Citrine Ore",
   "block.chrismod.speedy_block": "Speedy Block",
 
-  "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!"
+  "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
+
+  "tooltip.chrismod.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
+  "tooltip.chrismod.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.chrismod.block.speedy_block": "I am speed!"
 
 }
