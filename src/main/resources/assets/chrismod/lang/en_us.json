@@ -26,6 +26,9 @@
   "block.chrismod.ebony_door": "Ebony Door",
   "block.chrismod.ebony_trapdoor": "Ebony Trapdoor",
 
+  "block.chrismod.pink_rose": "Pink Rose",
+  "block.chrismod.potted_pink_rose":" Potted Pink Rose",
+
   "item.chrismod.citrine_sword": "Citrine Sword",
   "item.chrismod.citrine_axe": "Citrine Axe",
   "item.chrismod.citrine_shovel": "Citrine Shovel",
@@ -37,9 +40,7 @@
   "item.chrismod.citrine_leggings": "Citrine Legging",
   "item.chrismod.citrine_boots": "Citrine Boots",
 
-  "block.chrismod.pink_rose": "Pink Rose",
-  "block.chrismod.potted_pink_rose":" Potted Pink Rose",
-
+  "item.chrismod.magic_dust": "Magic Dust",
 
   "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
 

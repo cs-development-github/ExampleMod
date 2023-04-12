@@ -62,6 +62,9 @@ public class ModItems {
     public static final RegistryObject<Item> CITRINE_BOOTS = ITEMS.register("citrine_boots",
             () -> new ModArmorItem(ModArmorMaterials.CITRINE , EquipmentSlot.FEET  , new Item.Properties().tab(ModItemGroup.ChrisModTab)));
 
+    public static final RegistryObject<Item> MAGIC_DUST = ITEMS.register("magic_dust",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.ChrisModTab)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
