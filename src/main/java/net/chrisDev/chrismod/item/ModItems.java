@@ -4,6 +4,7 @@ import net.chrisDev.chrismod.Chrismod;
 import net.chrisDev.chrismod.item.custom.CoalCokeItem;
 import net.chrisDev.chrismod.item.custom.DowsingRodItem;
 import net.chrisDev.chrismod.item.custom.LeviationSwordItem;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -47,6 +48,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> CITRINE_HOE = ITEMS.register("citrine_hoe",
             () -> new HoeItem(ModTiers.CITRINE , 2 , 3f , new Item.Properties().tab(ModItemGroup.ChrisModTab)));
+
+    public static final RegistryObject<Item> CITRINE_HELMET = ITEMS.register("citrine_helmet",
+            () -> new ArmorItem(ModArmorMaterials.CITRINE , EquipmentSlot.HEAD  , new Item.Properties().tab(ModItemGroup.ChrisModTab)));
+
+    public static final RegistryObject<Item> CITRINE_CHESTPLATE = ITEMS.register("citrine_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.CITRINE , EquipmentSlot.CHEST  , new Item.Properties().tab(ModItemGroup.ChrisModTab)));
+
+    public static final RegistryObject<Item> CITRINE_LEGGINGS = ITEMS.register("citrine_leggings",
+            () -> new ArmorItem(ModArmorMaterials.CITRINE , EquipmentSlot.LEGS  , new Item.Properties().tab(ModItemGroup.ChrisModTab)));
+
+    public static final RegistryObject<Item> CITRINE_BOOTS = ITEMS.register("citrine_boots",
+            () -> new ArmorItem(ModArmorMaterials.CITRINE , EquipmentSlot.FEET  , new Item.Properties().tab(ModItemGroup.ChrisModTab)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -32,6 +32,11 @@
   "item.chrismod.citrine_pickaxe": "Citrine Pickaxe",
   "item.chrismod.citrine_hoe": "Citrine Hoe",
 
+  "item.chrismod.citrine_helmet": "Citrine Helmet",
+  "item.chrismod.citrine_chestplate": "Citrine Chestplate",
+  "item.chrismod.citrine_leggings": "Citrine Legging",
+  "item.chrismod.citrine_boots": "Citrine Boots",
+
 
   "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
 
@@ -39,5 +44,6 @@
   "tooltip.chrismod.item.tooltip": "Press §eSHIFT§r for more Information!",
   "tooltip.chrismod.levitateSword.tooltip.shift": "A magic sword that levitates enemies",
   "tooltip.chrismod.block.speedy_block": "I am speed!"
+
 
 }
