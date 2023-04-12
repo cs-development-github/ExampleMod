@@ -1,10 +1,7 @@
 package net.chrisDev.chrismod.item;
 
 import net.chrisDev.chrismod.Chrismod;
-import net.chrisDev.chrismod.item.custom.CoalCokeItem;
-import net.chrisDev.chrismod.item.custom.DowsingRodItem;
-import net.chrisDev.chrismod.item.custom.LeviationSwordItem;
-import net.chrisDev.chrismod.item.custom.ModArmorItem;
+import net.chrisDev.chrismod.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.RecipeType;
@@ -64,6 +61,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> MAGIC_DUST = ITEMS.register("magic_dust",
             () -> new Item(new Item.Properties().tab(ModItemGroup.ChrisModTab)));
+
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().tab(ModItemGroup.ChrisModTab).stacksTo(1)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
