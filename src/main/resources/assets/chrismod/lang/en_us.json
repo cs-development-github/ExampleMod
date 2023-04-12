@@ -7,6 +7,20 @@
   "item.chrismod.cucumber": "Cucumber",
   "item.chrismod.coal_coke": "Coal Coke",
 
+  "item.chrismod.citrine_sword": "Citrine Sword",
+  "item.chrismod.citrine_axe": "Citrine Axe",
+  "item.chrismod.citrine_shovel": "Citrine Shovel",
+  "item.chrismod.citrine_pickaxe": "Citrine Pickaxe",
+  "item.chrismod.citrine_hoe": "Citrine Hoe",
+
+  "item.chrismod.citrine_helmet": "Citrine Helmet",
+  "item.chrismod.citrine_chestplate": "Citrine Chestplate",
+  "item.chrismod.citrine_leggings": "Citrine Legging",
+  "item.chrismod.citrine_boots": "Citrine Boots",
+
+  "item.chrismod.magic_dust": "Magic Dust",
+
+  "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
 
   "block.chrismod.citrine_block": "Citrine Block",
   "block.chrismod.raw_citrine_block": "Raw Citrine Block",
@@ -29,20 +43,11 @@
   "block.chrismod.pink_rose": "Pink Rose",
   "block.chrismod.potted_pink_rose":" Potted Pink Rose",
 
-  "item.chrismod.citrine_sword": "Citrine Sword",
-  "item.chrismod.citrine_axe": "Citrine Axe",
-  "item.chrismod.citrine_shovel": "Citrine Shovel",
-  "item.chrismod.citrine_pickaxe": "Citrine Pickaxe",
-  "item.chrismod.citrine_hoe": "Citrine Hoe",
+  "block.chrismod.winter_window": "Winter Window",
+  "block.chrismod.citrine_lamp": "Citrine Lamp",
 
-  "item.chrismod.citrine_helmet": "Citrine Helmet",
-  "item.chrismod.citrine_chestplate": "Citrine Chestplate",
-  "item.chrismod.citrine_leggings": "Citrine Legging",
-  "item.chrismod.citrine_boots": "Citrine Boots",
 
-  "item.chrismod.magic_dust": "Magic Dust",
 
-  "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
 
   "tooltip.chrismod.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
   "tooltip.chrismod.item.tooltip": "Press §eSHIFT§r for more Information!",

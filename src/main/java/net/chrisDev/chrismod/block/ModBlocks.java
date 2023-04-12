@@ -1,6 +1,7 @@
 package net.chrisDev.chrismod.block;
 
 import net.chrisDev.chrismod.Chrismod;
+import net.chrisDev.chrismod.block.custom.CitrineLampBlock;
 import net.chrisDev.chrismod.block.custom.SpeedyBlock;
 import net.chrisDev.chrismod.item.ModItemGroup;
 import net.chrisDev.chrismod.item.ModItems;
@@ -120,20 +121,26 @@ public class ModBlocks {
                     .strength(5f)
                     .requiresCorrectToolForDrops().noCollission()
                     .sound(SoundType.METAL)), ModItemGroup.ChrisModTab);
-
     public static final RegistryObject<Block> PINK_ROSE = registerBlock("pink_rose",
             () -> new FlowerBlock(MobEffects.LEVITATION, 8,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()), ModItemGroup.ChrisModTab);
-
     public static final RegistryObject<Block> POTTED_PINK_ROSE = registerBlockWithoutBlockItem("potted_pink_rose",
             () -> new FlowerPotBlock(null, ModBlocks.PINK_ROSE,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+    public static final RegistryObject<Block> WINTER_WINDOW = registerBlock("winter_window",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()), ModItemGroup.ChrisModTab);
+
+    public static final RegistryObject<Block> CITRINE_LAMP = registerBlock("citrine_lamp",
+            () -> new CitrineLampBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.GLASS)
+                    .lightLevel(
+                            (state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)),
+            ModItemGroup.ChrisModTab);
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
     }
-
-
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, String tooltipKey){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);
         registerBlockItem(name, toReturn, tab, tooltipKey);
