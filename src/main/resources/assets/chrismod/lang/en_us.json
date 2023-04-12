@@ -36,7 +36,8 @@
   "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
 
   "tooltip.chrismod.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
-  "tooltip.chrismod.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.chrismod.item.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.chrismod.levitateSword.tooltip.shift": "A magic sword that levitates enemies",
   "tooltip.chrismod.block.speedy_block": "I am speed!"
 
 }

@@ -59,7 +59,7 @@ public class DowsingRodItem extends Item {
        if(Screen.hasShiftDown()){
            pTooltipComponents.add(new TranslatableComponent("tooltip.chrismod.dowsing_rod.tooltip.shift"));
        } else {
-           pTooltipComponents.add(new TranslatableComponent("tooltip.chrismod.dowsing_rod.tooltip"));
+           pTooltipComponents.add(new TranslatableComponent("tooltip.chrismod.item.tooltip"));
        }
     }
 
