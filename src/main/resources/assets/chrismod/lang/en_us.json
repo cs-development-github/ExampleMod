@@ -15,6 +15,17 @@
   "block.chrismod.endstone_citrine_ore": "Endstone Citrine Ore",
   "block.chrismod.netherrack_citrine_ore": "Netherrack Citrine Ore",
   "block.chrismod.speedy_block": "Speedy Block",
+  "block.chrismod.citrine_stairs": "Citrine Stairs",
+  "block.chrismod.citrine_fence": "Citrine Fence",
+  "block.chrismod.citrine_fence_gate": "Citrine Fence Gate",
+  "block.chrismod.citrine_slab": "Citrine Slab",
+  "block.chrismod.citrine_wall": "Citrine Wall",
+
+  "block.chrismod.citrine_button": "Citrine Button",
+  "block.chrismod.citrine_pressure_plate": "Citrine Pressure Plate",
+  "block.chrismod.ebony_door": "Ebony Door",
+  "block.chrismod.ebony_trapdoor": "Ebony Trapdoor",
+
 
   "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chrismod:block/citrine_slab"
+    },
+    "type=double": {
+      "model": "chrismod:block/citrine_block"
+    },
+    "type=top": {
+      "model": "chrismod:block/citrine_slab_top"
+    }
+  }
+}

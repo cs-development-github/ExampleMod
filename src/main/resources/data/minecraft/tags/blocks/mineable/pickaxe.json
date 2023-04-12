@@ -7,6 +7,15 @@
     "chrismod:deepslate_citrine_ore",
     "chrismod:netherrack_citrine_ore",
     "chrismod:endstone_citrine_ore",
-    "chrismod:speedy_block"
+    "chrismod:speedy_block",
+    "chrismod:citrine_stairs",
+    "chrismod:citrine_wall",
+    "chrismod:citrine_slab",
+    "chrismod:citrine_fence",
+    "chrismod:citrine_fence_gate",
+    "chrismod:citrine_pressure_plate",
+    "chrismod:citrine_button",
+    "chrismod:ebony_door",
+    "chrismod:ebony_trapdoor"
   ]
 }
