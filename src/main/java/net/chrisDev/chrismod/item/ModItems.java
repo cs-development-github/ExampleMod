@@ -65,6 +65,10 @@ public class ModItems {
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
             () -> new DataTabletItem(new Item.Properties().tab(ModItemGroup.ChrisModTab).stacksTo(1)));
 
+    public static final RegistryObject<Item> CHRIS_BOW = ITEMS.register("chris_bow",
+            () -> new BowItem(new Item.Properties().tab(ModItemGroup.ChrisModTab).durability(500)));
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

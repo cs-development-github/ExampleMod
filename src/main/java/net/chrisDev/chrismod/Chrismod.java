@@ -3,6 +3,7 @@ package net.chrisDev.chrismod;
 import net.chrisDev.chrismod.block.ModBlocks;
 import net.chrisDev.chrismod.item.ModItems;
 import net.chrisDev.chrismod.painting.ModPaintings;
+import net.chrisDev.chrismod.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -19,7 +20,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(Chrismod.MOD_ID)
 public class Chrismod
 {
-    public static  final String MOD_ID="chrismod";
+    public static final String MOD_ID="chrismod";
 
     private static final Logger LOGGER = LogManager.getLogger();
     public Chrismod()
@@ -44,6 +45,8 @@ public class Chrismod
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_PINK_ROSE.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WINTER_WINDOW.get(), RenderType.translucent());
+
+        ModItemProperties.addCustomItemProperties();
     }
 
     private void setup(final FMLCommonSetupEvent event){
