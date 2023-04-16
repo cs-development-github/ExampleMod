@@ -3,17 +3,22 @@ package net.chrisDev.chrismod.block;
 import net.chrisDev.chrismod.Chrismod;
 import net.chrisDev.chrismod.block.custom.CitrineLampBlock;
 import net.chrisDev.chrismod.block.custom.CucumberPlantBlock;
+import net.chrisDev.chrismod.block.custom.ModFlammableRotatedPillarBlock;
 import net.chrisDev.chrismod.block.custom.SpeedyBlock;
 import net.chrisDev.chrismod.item.ModItemGroup;
 import net.chrisDev.chrismod.item.ModItems;
 import net.chrisDev.chrismod.sound.ModSounds;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -140,9 +145,35 @@ public class ModBlocks {
                             (state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)
                     .sound(ModSounds.CITRINE_LAMP_SOUNDS)),
             ModItemGroup.ChrisModTab);
-
     public static final RegistryObject<Block> CUCUMBER_PLANT = registerBlockWithoutBlockItem("cucumber_plant",
             () -> new CucumberPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModItemGroup.ChrisModTab);
+    public static final RegistryObject<Block> STRIPPED_EBONY_LOG = registerBlock("stripped_ebony_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), ModItemGroup.ChrisModTab);
+    public static final RegistryObject<Block> EBONY_WOOD = registerBlock("ebony_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), ModItemGroup.ChrisModTab);
+    public static final RegistryObject<Block> STRIPPED_EBONY_WOOD = registerBlock("stripped_ebony_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), ModItemGroup.ChrisModTab);
+
+
+    public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            }, ModItemGroup.ChrisModTab);
+
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
