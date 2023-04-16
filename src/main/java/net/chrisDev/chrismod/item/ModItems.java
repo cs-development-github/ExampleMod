@@ -3,6 +3,7 @@ package net.chrisDev.chrismod.item;
 import net.chrisDev.chrismod.Chrismod;
 import net.chrisDev.chrismod.block.ModBlocks;
 import net.chrisDev.chrismod.item.custom.*;
+import net.chrisDev.chrismod.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.RecipeType;
@@ -73,6 +74,9 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.CUCUMBER_PLANT.get(),
                     new Item.Properties().tab(ModItemGroup.ChrisModTab)));
 
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new RecordItem(4, ModSounds.BAR_BRAWL,
+                    new Item.Properties().tab(ModItemGroup.ChrisModTab).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus){

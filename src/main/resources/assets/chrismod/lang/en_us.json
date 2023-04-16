@@ -57,5 +57,7 @@
   "tooltip.chrismod.levitateSword.tooltip.shift": "A magic sword that levitates enemies",
   "tooltip.chrismod.block.speedy_block": "I am speed!",
 
-  "sounds.chrismod.dowsing_rod_found_ore": "Dowsing Rod Fond Item Sound"
+  "sounds.chrismod.dowsing_rod_found_ore": "Dowsing Rod Fond Item Sound",
+  "item.chrismod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.chrismod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)"
 }

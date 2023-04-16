@@ -34,5 +34,13 @@
     "sounds": [
       "chrismod:citrine_lamp_fall"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "chrismod:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }
