@@ -21,6 +21,7 @@
   "item.chrismod.magic_dust": "Magic Dust",
   "item.chrismod.data_tablet": "Data Tablet",
   "item.chrismod.chris_bow": "Bow Bow",
+  "item.chrismod.cucumber_seeds": "Cucumber Seeds",
 
 
   "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
@@ -49,8 +50,7 @@
   "block.chrismod.winter_window": "Winter Window",
   "block.chrismod.citrine_lamp": "Citrine Lamp",
 
-
-
+  "block.chrismod.cucumber_plant": "Cucumber_plant",
 
   "tooltip.chrismod.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
   "tooltip.chrismod.item.tooltip": "Press §eSHIFT§r for more Information!",

@@ -1,6 +1,7 @@
 package net.chrisDev.chrismod.item;
 
 import net.chrisDev.chrismod.Chrismod;
+import net.chrisDev.chrismod.block.ModBlocks;
 import net.chrisDev.chrismod.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -67,6 +68,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHRIS_BOW = ITEMS.register("chris_bow",
             () -> new BowItem(new Item.Properties().tab(ModItemGroup.ChrisModTab).durability(500)));
+
+    public static final RegistryObject<Item> CUCUMBER_SEEDS = ITEMS.register("cucumber_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CUCUMBER_PLANT.get(),
+                    new Item.Properties().tab(ModItemGroup.ChrisModTab)));
+
 
 
     public static void register(IEventBus eventBus){

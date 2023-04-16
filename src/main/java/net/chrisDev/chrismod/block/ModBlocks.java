@@ -2,6 +2,7 @@ package net.chrisDev.chrismod.block;
 
 import net.chrisDev.chrismod.Chrismod;
 import net.chrisDev.chrismod.block.custom.CitrineLampBlock;
+import net.chrisDev.chrismod.block.custom.CucumberPlantBlock;
 import net.chrisDev.chrismod.block.custom.SpeedyBlock;
 import net.chrisDev.chrismod.item.ModItemGroup;
 import net.chrisDev.chrismod.item.ModItems;
@@ -137,6 +138,9 @@ public class ModBlocks {
                     .lightLevel(
                             (state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)),
             ModItemGroup.ChrisModTab);
+
+    public static final RegistryObject<Block> CUCUMBER_PLANT = registerBlockWithoutBlockItem("cucumber_plant",
+            () -> new CucumberPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
