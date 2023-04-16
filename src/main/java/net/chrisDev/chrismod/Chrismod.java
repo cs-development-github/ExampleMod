@@ -3,6 +3,7 @@ package net.chrisDev.chrismod;
 import net.chrisDev.chrismod.block.ModBlocks;
 import net.chrisDev.chrismod.item.ModItems;
 import net.chrisDev.chrismod.painting.ModPaintings;
+import net.chrisDev.chrismod.sound.ModSounds;
 import net.chrisDev.chrismod.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -30,6 +31,7 @@ public class Chrismod
         ModItems.ITEMS.register(eventBus);
         ModBlocks.BLOCKS.register(eventBus);
         ModPaintings.register(eventBus);
+        ModSounds.register(eventBus);
 
         eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::setup);

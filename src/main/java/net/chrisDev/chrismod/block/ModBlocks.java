@@ -6,6 +6,7 @@ import net.chrisDev.chrismod.block.custom.CucumberPlantBlock;
 import net.chrisDev.chrismod.block.custom.SpeedyBlock;
 import net.chrisDev.chrismod.item.ModItemGroup;
 import net.chrisDev.chrismod.item.ModItems;
+import net.chrisDev.chrismod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
@@ -136,7 +137,8 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()
                     .sound(SoundType.GLASS)
                     .lightLevel(
-                            (state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)),
+                            (state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)
+                    .sound(ModSounds.CITRINE_LAMP_SOUNDS)),
             ModItemGroup.ChrisModTab);
 
     public static final RegistryObject<Block> CUCUMBER_PLANT = registerBlockWithoutBlockItem("cucumber_plant",

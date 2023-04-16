@@ -55,7 +55,7 @@
   "tooltip.chrismod.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
   "tooltip.chrismod.item.tooltip": "Press §eSHIFT§r for more Information!",
   "tooltip.chrismod.levitateSword.tooltip.shift": "A magic sword that levitates enemies",
-  "tooltip.chrismod.block.speedy_block": "I am speed!"
+  "tooltip.chrismod.block.speedy_block": "I am speed!",
 
-
+  "sounds.chrismod.dowsing_rod_found_ore": "Dowsing Rod Fond Item Sound"
 }
