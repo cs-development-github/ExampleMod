@@ -36,6 +36,7 @@
   "block.chrismod.citrine_stairs": "Citrine Stairs",
   "block.chrismod.citrine_fence": "Citrine Fence",
   "block.chrismod.citrine_fence_gate": "Citrine Fence Gate",
+
   "block.chrismod.citrine_slab": "Citrine Slab",
   "block.chrismod.citrine_wall": "Citrine Wall",
 
@@ -71,5 +72,7 @@
 
   "sounds.chrismod.dowsing_rod_found_ore": "Dowsing Rod Fond Item Sound",
   "item.chrismod.bar_brawl_music_disc": "Bar Brawl Music Disc",
-  "item.chrismod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)"
+  "item.chrismod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "effect.chrosmid.freeze": "Freeze"
 }
