@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
@@ -65,10 +66,10 @@ public class ModBlocks {
                     .sound(SoundType.STONE)), ModItemGroup.ChrisModTab);
 
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.METAL)), ModItemGroup.ChrisModTab);
+                    .requiresCorrectToolForDrops(), UniformInt.of(3,7)
+            ), ModItemGroup.ChrisModTab);
 
     public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
             () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE)
