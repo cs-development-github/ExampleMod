@@ -4,6 +4,7 @@ import net.chrisDev.chrismod.block.ModBlocks;
 import net.chrisDev.chrismod.effect.ModEffects;
 import net.chrisDev.chrismod.item.ModItems;
 import net.chrisDev.chrismod.painting.ModPaintings;
+import net.chrisDev.chrismod.potion.ModPotions;
 import net.chrisDev.chrismod.sound.ModSounds;
 import net.chrisDev.chrismod.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -34,6 +35,7 @@ public class Chrismod
         ModPaintings.register(eventBus);
         ModSounds.register(eventBus);
         ModEffects.register(eventBus);
+        ModPotions.register(eventBus);
 
         eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::setup);

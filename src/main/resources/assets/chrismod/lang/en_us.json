@@ -23,8 +23,11 @@
   "item.chrismod.chris_bow": "Bow Bow",
   "item.chrismod.cucumber_seeds": "Cucumber Seeds",
 
-
   "item.chrismod.dowsing_rod.no_valuables": "No Valuables Found!",
+
+  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
+  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze",
 
   "block.chrismod.citrine_block": "Citrine Block",
   "block.chrismod.raw_citrine_block": "Raw Citrine Block",
@@ -74,5 +77,5 @@
   "item.chrismod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.chrismod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
-  "effect.chrosmid.freeze": "Freeze"
+  "effect.chrismid.freeze": "Freeze"
 }
