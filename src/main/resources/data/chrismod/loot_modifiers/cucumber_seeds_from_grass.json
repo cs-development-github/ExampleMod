@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:grass"
+    }
+  ],
+  "addition": "chrismod:cucumber_seeds",
+  "type": "chrismod:cucumber_seeds_from_grass"
+}
