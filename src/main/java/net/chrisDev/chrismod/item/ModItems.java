@@ -78,7 +78,8 @@ public class ModItems {
             () -> new RecordItem(4, ModSounds.BAR_BRAWL,
                     new Item.Properties().tab(ModItemGroup.ChrisModTab).stacksTo(1)));
 
-
+    public static final RegistryObject<Item> CITRINE_STAFF = ITEMS.register("citrine_staff",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.ChrisModTab).stacksTo(1)));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
