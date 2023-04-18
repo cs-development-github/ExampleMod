@@ -1,10 +1,7 @@
 package net.chrisDev.chrismod.block;
 
 import net.chrisDev.chrismod.Chrismod;
-import net.chrisDev.chrismod.block.custom.CitrineLampBlock;
-import net.chrisDev.chrismod.block.custom.CucumberPlantBlock;
-import net.chrisDev.chrismod.block.custom.ModFlammableRotatedPillarBlock;
-import net.chrisDev.chrismod.block.custom.SpeedyBlock;
+import net.chrisDev.chrismod.block.custom.*;
 import net.chrisDev.chrismod.item.ModItemGroup;
 import net.chrisDev.chrismod.item.ModItems;
 import net.chrisDev.chrismod.sound.ModSounds;
@@ -195,6 +192,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
             () -> new SaplingBlock(new EbonyTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModItemGroup.ChrisModTab);
+
+    public static final RegistryObject<Block> GEM_CUTTING_STATION = registerBlock("gem_cutting_station",
+            () -> new GemCuttingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),
+            ModItemGroup.ChrisModTab);
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
